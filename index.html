@@ -7,11 +7,8 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="dopstyle.css" rel="stylesheet" media="screen">	
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
+	<link href="search.css" rel="stylesheet" type="text/css">
+  
   </head>
   <body>
 <div class="container">
@@ -24,6 +21,10 @@
         <li><a href="#">INFO</a></li>
         <li><a href="#">CONTACTS</a></li>
         <li><a href="#">GOODS FOR SALE</a></li>
+       <form class="searchform">
+        <input class="searchfield" type="text" value="search..." onfocus="if (this.value == 'search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'search...';}" />
+        <input class="searchbutton" type="button" value="Go"/>
+       </form>
     </ul>
 </div>
 
